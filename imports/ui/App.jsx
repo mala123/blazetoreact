@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-
+import React, { Component } from 'react'
 
 export class App extends React.Component {
 	constructor(props) {
@@ -10,13 +9,11 @@ export class App extends React.Component {
 	handleClick() {
 	  this.setState({count: this.state.count + 1 });
   }
-
-
-	render(){
+  render(){
     return(
 			<div>
 				<h1>welcome to meteor</h1>
-				<button id="qty" onClick={this.handleClick.bind(this)} type="button">clickhere</button>
+				<button  onClick={this.handleClick.bind(this)} type="button">clickhere</button>
 				  <p>You've pressed the button {this.state.count} times.</p>
 
 		  <div>
